@@ -1,0 +1,36 @@
+form {
+    display: grid;
+    grid-template-rows: repeat(1fr);
+    gap: 1rem;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    overflow: scroll;
+}
+button {
+    width: 3.7rem;
+    height: 1.6rem;
+}
+input {
+    width: 90%;
+}
+textarea {
+    width: 90%;
+}
+#grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 99vh;
+}
+#application {
+    background-color: white;
+    border-radius: 2rem;
+    padding: 3rem;
+    overflow: scroll;
+}
+h2 {
+    color: black;
+}
+p {
+    color: black;
+}

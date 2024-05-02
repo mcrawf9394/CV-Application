@@ -10,14 +10,12 @@ const formNeeds = [
 ]
 return (
   <>
-  <form>
     {formNeeds.map((need) => {
       return <>
       <label>{need.label}</label>
-      <input key={need.label} type={need.type} value={need.value} onChange={(event) => need.change(event.target.value)}></input>
+      <input className="generalInfo" id={need.label} type={need.type} value={need.value} onChange={(event) => need.change(event.target.value)}></input>
       </>
     })}
-  </form>
   </>
 )
 }
