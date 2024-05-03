@@ -42,6 +42,7 @@ function Education () {
       {element}
       </>
     })}
+    <div>
     <button onClick={(click) => {
       click.preventDefault()
       if (count > 0) {
@@ -53,6 +54,7 @@ function Education () {
       click.preventDefault()
       setCount(count + 1)
       }}>Add</button>
+    </div>
     </>
 }
 export default Education

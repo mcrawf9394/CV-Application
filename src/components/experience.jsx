@@ -23,7 +23,7 @@ function Experience () {
           </>
         })}
         <label>{description.label}</label>
-        <textarea className="experience" id={description.label} rows="4" cols="50"></textarea>
+        <input className="experience" id={description.label} rows="4" cols="50"></input>
         </>
       }
     let i = 0
@@ -39,12 +39,13 @@ function Experience () {
         </>
       })}
        <label>{description.label}</label>
-      <textarea className="experience" id={description.label} value={description.value} rows="4" cols="50" onChange={(event) => description.change(event.target.value)}></textarea>
+      <input className="experience-description" id={description.label} value={description.value} rows="4" cols="50" onChange={(event) => description.change(event.target.value)}></input>
     {extras.map((extra) => {
         return <>
         {extra}
         </>
     })}
+    <div>
       <button onClick={(click) => {
         click.preventDefault()
         if (count > 0) {
@@ -55,6 +56,7 @@ function Experience () {
         click.preventDefault()
         setCount(count + 1)
       }}>Add</button>
+      </div>
       </>
 }
 export default Experience

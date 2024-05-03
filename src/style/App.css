@@ -10,6 +10,7 @@ form {
 button {
     width: 3.7rem;
     height: 1.6rem;
+    margin-right: 1rem;
 }
 input {
     width: 90%;

@@ -1,0 +1,21 @@
+h1 {
+    color: black;
+    text-align: center;
+    width: 100%;
+}
+.generalInfodisplay {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    text-align: center;
+    align-items: center;
+}
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.educationdisplay {
+    align-items: center;
+}
+.experiencedisplay {
+    overflow-wrap: break-word;
+}
